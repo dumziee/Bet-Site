@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) 
+{
+	int s;
+	char x='a';
+	char grade;
+
+
+	printf("\n enter your grade, (A or B) : ");
+		scanf("%c", &x);
+	
+	if (x== 'A')
+	{
+		printf("your total salary; 300");
+		
+	}
+	else if (x=='B')
+	{
+	printf("your total salary; 250");
+	}
+	else
+	{
+			printf("your total salary; 100");
+	}
+
+
+	return 0;
+}

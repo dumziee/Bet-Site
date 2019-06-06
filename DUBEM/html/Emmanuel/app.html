@@ -1,0 +1,282 @@
+<!Doctype html>
+<html>
+<head>
+<title>APPLICATION FORM</title> 
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scaleable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+<link rel="stylesheet" href="Scripts/w3.css"/>
+<style>
+.text{width:150px; height:auto;}
+.text1{width:550px; height:auto;}
+.table1{border:solid 1px; border-radius:10px;}
+.thumb-image{
+ width:100px;
+ position:relative;
+ padding:5px;
+ border:solid 1px red;
+ float:right;
+ margin-left:250px
+}
+#text{
+	width:150px;
+}
+
+</style>
+</head>
+
+<body class="@media">
+<header class="w3-gray" style="margin-top:0px">
+<div><h3 class="w3-padding ">APTECH REGISTRATION AND ENQUIRY FORMS</h3></div>
+<nav class="w3-black">
+<a href="app.html" class="w3-button">Application Form</a>
+<a href="reg.html" class="w3-button">Registration Form</a>
+<a href="inq.html" class="w3-button">Enquiry Form</a>
+</nav>
+</header>
+
+<form>
+<div class="w3-container w3-center" style="width:1200px; margin:45px; border:solid 10px red; border-radius:15px;">
+<br />
+<div>
+<br/>
+<span <img src="image\1.jpg" </span>
+<span class="w3-black w3-wide w3-padding" style="margin-left:-200px; margin-top:120px;">APPLICATION FORM</span>
+<div id="PreviewPicture"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<div id="wrapper" style="margin-top: 20px;"><input id="fileUpload" multiple="multiple" type="file" style="float:right;"/> <br/><br/>
+<div id="image-holder"><br/>
+</div>
+<script>
+
+	$(document).ready(function() {
+        $("#fileUpload").on('change', function() {
+          //Get count of selected files
+          var countFiles = $(this)[0].files.length;
+          var imgPath = $(this)[0].value;
+          var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+          var image_holder = $("#image-holder");
+          image_holder.empty();
+          if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+            if (typeof(FileReader) != "undefined") {
+              //loop for each file selected for uploaded.
+              for (var i = 0; i < countFiles; i++) 
+              {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                  $("<img />", {
+                    "src": e.target.result,
+                    "class": "thumb-image"
+                  }).appendTo(image_holder);
+                }
+                image_holder.show();
+                reader.readAsDataURL($(this)[0].files[i]);
+              }
+            } else {
+              alert("This browser does not support FileReader.");
+            }
+          } else {
+            alert("Pls select only images");
+          }
+        });
+      });
+
+</script>
+
+
+</div>
+<br />
+<div>
+<br/> <br/> <br/>
+<span style="float:left;">Sr. No: <input type="text" placeholder="01-1000" style="width:100px; height:auto;" /></span>
+<span>Course Applied for: <select> 
+<option value="select" selected="selected">Select</option>
+<option value="CPISM">Certificat of Proficiency in Information System Management</option>
+<option>ADSE</option>
+<option value="ACHS">Aptech Certified Network Administrator</option>
+<option value="ACNA">Aptech Certified Network Admnistrator</option>
+<option value="ACNM">Aptech Certified Network Manager</option>
+<option value="ACDM"> Aptech Certified Database Manager-SQL Server</option>
+</select></span>
+</div>
+
+<div class="w3-padding"style="border: solid 1px 1px 1px 1px; border-radius:12px; background-color:gray; margin-top:15px;text-align:justify;">
+<h5>PERSONAL DETAILS</h5>
+<span>TITLE <select><option>Mr.</option><option>Mrs.</option><option>Miss</option></select></span>
+<br/><br/>
+<span> Surname: <input type="text" placeholder="surname" class="text" /></span>
+<span> Firstname: <input type="text" placeholder="firstname" class="text" /></span>
+<span> Lastname: <input type="text" placeholder="lastname" class="text" /></span><br/><br/>
+<span>Present Address:<input type="text" placeholder="present address" class="text1" maxlength="70" /></span><br/><br/>
+<span>Date of Birth:<input type="date"/></span>
+<span style="margin-left:30px">Gender: <input type="radio" name="Gender:" value="Male" /> Male <input type="radio" name="Gender:" value="Female"bhg /> Female
+<span style="margin-left:30px"> Contact No.: <input type="tel"/><br/>
+<br/>
+<span>Permanent Address:<input type="text" placeholder="permanent address" class="text1" maxlength="70" /></span><br/>
+<br/>
+<span>E-mail id1: <input type="email" class="text1" id="id1"/></span><br/>
+<br/>
+<span>E-mail id2: <input type="email" class="text1" id="id2"/></span><br/>
+<br/>
+</div><br/>
+
+<div class="w3-left">
+<span style="text-align:left;"><h5>FAMILY BACKGROUND</h5><h6>(Fill at least two sets)</h6></span>
+<div>
+<span>Name: <input type="text" required="true" id="text"/></span>
+<span style="margin-left:5px">AGE: <input type="date"required="true" id="text"/></span>
+<span style="margin-left:5px"">RELATION: <select required="true"><option>Select</option> <option>Mother</option> <option>Father</option> <option>Brother</option> <option>Sister</option> <option>Aunty</option> <option>Uncle</option> <option>Cousin</option> <option>Niece</option><option>Others</option></select></span>
+
+<span>EDUCATION: <select required="true"><option>Select</option> <option>FSLC</option> <option>O-LEVEL</option> <option>ND</option> <option>HND</option> <option>Bachelor's Degree</option> <option>Master's Degree</option> <option>Phd</option> <option>Others</option></select></span>
+<span>OCCUPATION: <input type="text" required="true" id="text"/></span>
+</div>
+<br/>
+<div>
+<span>Name: <input type="text" id="text"/></span>
+<span style="margin-left:5px">AGE: <input type="date" id="text"/></span>
+<span style="margin-left:5px">RELATION: <select><option>Select</option> <option>Mother</option> <option>Father</option> <option>Brother</option> <option>Sister</option> <option>Aunty</option> <option>Uncle</option> <option>Cousin</option> <option>Niece</option><option>Others</option></select></span>
+
+<span>EDUCATION: <select><option>Select</option> <option>FSLC</option> <option>O-LEVEL</option> <option>ND</option> <option>HND</option> <option>Bachelor's Degree</option> <option>Master's Degree</option> <option>Phd</option> <option>Others</option></select></span>
+<span>OCCUPATION: <input type="text" id="text"/></span>
+</div>
+<br/>
+<div>
+<span>Name: <input type="text" id="text"/></span>
+<span style="margin-left:5px">AGE: <input type="date" id="text"/></span>
+<span style="margin-left:5px">RELATION: <select><option>Select</option> <option>Mother</option> <option>Father</option> <option>Brother</option> <option>Sister</option> <option>Aunty</option> <option>Uncle</option> <option>Cousin</option> <option>Niece</option><option>Others</option></select></span>
+
+<span>EDUCATION: <select><option>Select</option> <option>FSLC</option> <option>O-LEVEL</option> <option>ND</option> <option>HND</option> <option>Bachelor's Degree</option> <option>Master's Degree</option> <option>Phd</option> <option>Others</option></select></span>
+<span>OCCUPATION: <input type="text" id="text"/></span></div>
+<br/>
+</div>
+
+<div style="text-align:left;">
+<div>
+<span ><h5>LANGUAGES KNOWN</h5></span>
+<span>LANGUAGE: <input type="text"/> 
+<input type="checkbox" style="margin-left:35px"> Speak 
+<input type="checkbox" style="margin-left:35px"> Read 
+<input type="checkbox" style="margin-left:35px">Write
+</div>
+
+<div>
+<br/>
+<span>LANGUAGE: <input type="text"/> 
+<input type="checkbox" style="margin-left:35px"> Speak 
+<input type="checkbox" style="margin-left:35px"> Read 
+<input type="checkbox" style="margin-left:35px">Write
+</div>
+<div>
+<br/>
+<span>LANGUAGE: <input type="text"/> 
+<input type="checkbox" style="margin-left:35px"> Speak 
+<input type="checkbox" style="margin-left:35px"> Read 
+<input type="checkbox" style="margin-left:35px">Write
+</div>  </div>
+
+
+<div style="text-align:left;">
+<div>
+<span ><h5>EDUCATION</h5></span>
+</div>
+<span>Certificate: <select><option>Select</option> <option>FSLC</option> <option>O-LEVEL</option> <option>ND</option> <option>HND</option> <option>Bachelor's Degree</option> <option>Master's Degree</option> <option>Phd</option> <option>Others</option></select></span>
+<span>Period <span>From: <input type="date" id="text"/></span> <span>TO: <input type="date" id="text"/></span>
+<span>Name of Institution: <input type="text" id="text"/></span><br/>
+<span>Year of Passing: <input type="date" id="text"/></span>
+<span>Division/%Marks of CGPa: <input type="number" id="text"/></span>
+
+</div>
+<br/>
+<div style="text-align:left;">
+<span ><h5>EXTRA CURRICULAR ACTIVITIES</h5></span><br/><br/>
+<div>Games:        <span style="margin-left:79px;"><input type="text" placeholder="game 1" required="true"/></span> <span>         <input type="text" placeholder="game 2"/>       </span><span><input type="text" placeholder="game 3"/></span></div>
+<br/>
+<div>Scocial Activities:        <span><input type="text" required="true"/></span> <span>         <input type="text"/>       </span><span><input type="text"/></span></div>
+<br/>
+<div>Hobbies:  <span style="margin-left:70px;"><input type="text" required="true"/></span> <span>         <input type="text"/>       </span><span><input type="text"/></span></div>
+
+<br/>
+</div>
+<div style="text-align:left;">
+<span><h5>FEEDBACK/SUGGESTION(s)</h5></span>
+<input type="text" placeholder="Feedback here." style="height:300px; width:1000px;" 
+</div>
+
+<div>
+<span><h5>DECLARATION</h5></span>
+<p>I hereby declare that I have understood the rules applicable to Aptech students and do agree to abide by them.</p>
+<span>Date: <input type="date"/></span><span>Place: <input type="text"/></span> 
+
+Signature:<input type='file' onChange="readURL(this);" />
+    <img id="blah" src="#" alt="your signature" size="2" />
+<script>
+   function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(70)
+                        .height(50);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+<style type="text/css">
+#blah{
+	width:20px;
+	height:500px;
+	background-color:yellow;
+  }
+</style>
+
+<br/><br/>
+
+</div>
+<div style="border-bottom:solid black 3px; ">
+</div>
+<br/><br/>
+<div>
+<span><h5>FOR OFFICIAL USE ONLY</h5></span>
+<style type="text/css">
+#sp{margin-left:15px}
+</style>
+<span>Accepted By: <input type="text" id="text"/> </span>
+<span id="sp">Booking Confirmation No: <input type="number" id="text"/></span>
+
+<span id="sp"> Center: <input tyoe="text" id="text"/> </span>
+
+<span id="sp">At:<input type="text" id="text"/> </span> <br/> <br/>
+
+<span>Counsellor:<input type="text" id="text"/></span>
+
+<span id="sp">Date:<input type="date" id="text"/></span> 
+
+<span id="sp">Roll No: <input type="number" id="text"/></span>
+
+<br/><br/>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</form>
+
+<footer class="w3-gray" style="margin-top:12px; height:50px">
+<marquee class="w3-padding">welcome to Aptech Official Website</marquee>
+</footer>
+</body>
+</html>

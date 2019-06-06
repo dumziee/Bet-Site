@@ -1,0 +1,56 @@
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+<tbody><tr><th width="32%" class="dat"><div class="datebox1" id="hideyesterid" onclick="hideyester()" style="">8 Apr<br>Sun</div>
+<div class="datebox2" style="display: none;" id="showyesterid" onclick="showyester()">8 Apr<br>Sun</div></th>
+<th width="32%" class="dat"><div class="datebox2" id="hidetodayid" onclick="hidetoday()" style="">9 Apr<br>Today</div>
+<div class="datebox1" style="display: none;" id="showtodayid" onclick="showtoday()">9 Apr<br>Today</div></th>
+<th width="32%" class="dat"><div class="datebox1" id="hidetomoroid" onclick="hidetomoro()">10 Apr<br>Tue</div>
+<div class="datebox2" style="display:none;" id="showtomoroid" onclick="showtomoro()">10 Apr<br>Tue</div></th></tr>
+
+
+<tr><td colspan="3">
+<table border="0" cellpadding="5" cellspacing="0" width="100%" id="tableyester" style="display: none;">
+<tbody><tr><th width="7%">Time</th><th width="20%">League</th><th>Match</th><th width="17%">Tip</th><th width="7%">Score</th></tr>
+<tr align="center"><td>15:00</td><td>FIN</td><td>HJK vs Ilves</td><td>1</td><td>3-1</td></tr>
+<tr align="center" class="changetr"><td>18:00</td><td>SLO</td><td>Domzale vs Triglav</td><td>1</td><td>3-0</td></tr><tr align="center"><td>18:30</td><td>EGY</td><td>Smouha vs Al Ahly</td><td>X2</td><td>0-0</td></tr>
+<tr align="center" class="changetr"><td>15:00</td><td>DAN</td><td>Brondby vs Horsens</td><td>1</td><td>5-1</td></tr><tr align="center"><td>14:15</td><td>EPL</td><td>Arsenal vs Southampton</td><td>1</td><td>3-2</td></tr>
+<tr align="center" class="changetr"><td>14:30</td><td>RUS</td><td>Lokomotiv Moscow vs FK Rostov</td><td>1X</td><td>1-0</td></tr><tr align="center"><td>18:00</td><td>POR</td><td>FC Porto vs Aves</td><td>1</td><td>2-0</td></tr>
+<tr align="center" class="changetr"><td>15:00</td><td>SWI</td><td>Lugano vs Basel</td><td>X2</td><td>0-1</td></tr><tr align="center"><td>15:45</td><td>HOL</td><td>Ajax vs Heracles</td><td>OVER 2.5</td><td>1-0</td></tr>
+<tr align="center" class="changetr"><td>14:00</td><td>ITA</td><td>Napoli vs Chievo</td><td>1</td><td>2-1</td></tr><tr align="center"><td colspan="5" class="noneb">
+<table border="0" cellspacing="0"><tbody><tr><td align="right"><a href="tips_store/"><div class="viewmorebut">View More &gt;</div></a></td><td align="left"><a href="winning_archive/"><div class="bankertips">Winning Archive</div></a></td><td align="left"><a href="banker_tip/"><div class="bankertips">Banker Tip of the Day &gt;</div></a></td></tr></tbody></table>
+<div style="text-align:center;margin-top:20px;margin-bottom:20px;">
+<!-- Responsive -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2483292858269433" data-ad-slot="1398764312" data-ad-format="auto" data-adsbygoogle-status="done"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></td></tr>
+</tbody></table>
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%" id="tabletoday" style="">
+<tbody><tr><th width="7%">Time</th><th width="20%">League</th><th>Match</th><th width="17%">Tip</th><th width="7%">Score</th></tr>
+<tr align="center"><td>18:45</td><td>ROM</td><td>FCSB vs CS U. Craiova</td><td>1X</td><td></td></tr>
+<tr align="center" class="changetr"><td>19:00</td><td>HOL 2</td><td>Nijmegen vs Oss</td><td>OVER 2.5</td><td></td></tr><tr align="center"><td>19:45</td><td>IRE CUP</td><td>St. Patricks vs Dundalk</td><td>X2</td><td></td></tr>
+<tr align="center" class="changetr"><td>19:45</td><td>IRE CUP</td><td>Drogheda vs St Mochtas</td><td>1</td><td></td></tr><tr align="center"><td>18:00</td><td>DAN</td><td>Midtjylland vs FC Copenhagen</td><td>1X</td><td></td></tr>
+<tr align="center" class="changetr"><td>15:30</td><td>BUL</td><td>Etar vs Dunav Ruse</td><td>UNDER 2.5</td><td></td></tr><tr align="center"><td colspan="5" class="noneb">
+<table border="0" cellspacing="0"><tbody><tr><td align="right"><a href="tips_store/"><div class="viewmorebut">View More &gt;</div></a></td><td align="left"><a href="winning_archive/"><div class="bankertips">Winning Archive</div></a></td>
+<td align="left"><a href="banker_tip/"><div class="bankertips">Banker Tip of the Day &gt;</div></a></td></tr></tbody></table>
+<div style="text-align:center;margin-top:20px;margin-bottom:20px;">
+<!-- Responsive -->
+<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-2483292858269433" data-ad-slot="1398764312" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent;"><iframe width="970" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:970px;height:90px;"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></td></tr>
+</tbody></table>
+
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%" id="tabletomoro" style="display:none;">
+<tbody><tr><th width="7%">Time</th><th width="20%">League</th><th>Match</th><th width="17%">Tip</th><th width="7%">Score</th></tr>
+<tr align="center"><td>19:45</td><td>ECH</td><td>Fulham vs Reading</td><td>1</td><td></td></tr>
+<tr align="center" class="changetr"><td>19:45</td><td>UCL</td><td>Manchester City vs Liverpool</td><td>OVER 2.5</td><td></td></tr><tr align="center"><td>19:45</td><td>UCL</td><td>AS Roma vs Barcelona</td><td>OVER 2.5</td><td></td></tr>
+<tr align="center"><td colspan="5" class="noneb">
+<table border="0" cellspacing="0"><tbody><tr><td align="right"><a href="tips_store/"><div class="viewmorebut">View More &gt;</div></a></td><td align="left"><a href="winning_archive/"><div class="bankertips">Winning Archive</div></a></td><td align="left"><a href="banker_tip/"><div class="bankertips">Banker Tip of the Day &gt;</div></a></td></tr></tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>

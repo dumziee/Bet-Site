@@ -1,0 +1,64 @@
+
+small erercise
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) 
+{
+int a, mm, dd, yy;//declaring integer variables
+char phn[20]; // this makes the character a string
+char gn[20], fn[15], ln[15], mn[15], em[25];
+char f, m;//declaring characters
+
+mm=0; //to save the birth month
+dd=0; //to save the birth date
+yy=0; //to save the year of birth
+
+
+
+printf("Inquriry form\n");//this displasys enquiry form
+printf("First Name:\n ");//this displays first name then collects input
+scanf("%s", &fn); //this saves the in put in fn
+
+printf("Middle Name:\n ");
+scanf("%s", &mn);
+
+printf("Last Name:\n ");
+scanf("%s", &ln);
+
+printf("Please specify your gender 'male' or 'female'\n");
+printf("Gender: ");
+scanf("%s", &gn);
+
+printf("Day of birth:\n ");
+scanf("%d", &dd);
+printf("Month of birth:\n ");
+scanf("%d", &mm);
+printf("Year of birth:\n ");
+scanf("%d", &yy);
+
+printf("Phone number:\n ");
+scanf("%s", &phn);
+
+printf("Email Address:\n ");
+scanf("%s", &em);
+
+printf("Summary of form\n");
+
+printf("Names\n %s %s %s\n", fn, mn, ln);
+
+printf("Gender\n %s\n", gn);
+
+printf("Date of Birth\n %d/%d/%d\n", dd, mm, yy);
+
+printf("Phone Number\n %s\n", phn);
+
+printf("Email Address\n %s", em);
+
+
+
+
+	return 0;

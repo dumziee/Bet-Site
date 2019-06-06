@@ -1,0 +1,8 @@
+
+
+int main()
+{
+	printf("please enter your name: ");
+	
+	return(0);
+}

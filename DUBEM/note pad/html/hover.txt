@@ -1,0 +1,116 @@
+<!Doctpe html>
+<html>
+<head>
+<title>Menu bar</title>
+<meta charset="utf-8" />
+<style type="text/css">
+.navlayout
+{
+	float:left;
+	display:block;
+	width:100%;
+	margin:0px 0px 3em 0px;
+	padding:0px;
+	border-top:1px solid blue;
+	border-bottom:1px solid blue;
+	background-color:skyblue;
+}
+.navlayout li 
+{
+	float:left;
+	list-style-type:none;
+}
+.navlayout li a
+{
+	display:block;
+	padding:8px 15px;
+	text-decoration:none;
+	font=wieght: bold;
+	color:red;
+	border-right: 1px solid white;
+}
+.navlayout li a:hover
+{
+	backgrond-color:red;
+	color:white;
+	border-top:5px solid red;
+	border-bottom:5px solid red;
+}
+table
+{
+	height:500px;
+	width:600px;
+	text-align:center;
+}
+td.reg
+{
+	text-align:center;
+	background-color:silver;
+	color:red
+}
+
+
+</style>
+</head>
+
+<body>
+<div>
+
+</div>
+MENU BAR
+<div>
+<navlayout>
+
+<ul class="navlayout">
+<li><a href="#">Home</a></li>
+<li><a href="#">Market</a></li>
+<li><a href="#">People</a></li>
+<li><a href="#">About</a></li>
+
+
+
+</ul>
+
+</navlayout>
+</div>
+
+<hr />
+<div>
+<h3>Table function</h3>
+<table border="2">
+<tr>
+<td class="reg" colspan="5">Registration</td>
+</tr>
+<tr>
+<td>SN</td>
+<td>NAME</td>
+<td>PHONE</td>
+<td>EMAIL</td>
+<td rowspan="3">NEWS FEED</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Favor</td>
+<td>081748928839</td>
+<td>favor@gmail.com</td>
+
+
+</tr>
+
+<tr>
+<td>2</td>
+<td>Favor</td>
+<td>081748928839</td>
+<td>favor@gmail.com</td>
+
+
+</tr>
+</table>
+
+</div>
+
+
+
+
+</body>
+</html>

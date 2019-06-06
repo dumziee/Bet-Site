@@ -1,0 +1,38 @@
+
+int main(int argc, char *argv[]) {
+	int dp, b, basic, salary;
+	char names[60];
+	float ld, bp;
+	
+	printf("input name:\n ");
+	scanf("%s", names);
+	
+	printf("input basic:\n ");
+	scanf("%d", &b);
+	
+	printf("input daper:\n ");
+	scanf("%d", &dp);
+	
+	printf("input bonper:\n ");
+	scanf("%f", &bp);
+	
+	printf("input loander:\n ");
+	scanf("%f", &ld);
+	
+	
+	salary=b+b*dp/100+bp+b/100-ld;
+	
+	
+	
+	printf("Name");
+	printf("\t\tBasic");
+	printf("\t\tSalary");
+	printf("\n");
+	printf("%s", names);
+	printf("\t\t%d", b);
+	printf("\t\t%d", salary);
+	//printf("\n");
+//	printf("", name, b, salary);
+
+	return 0;
+}

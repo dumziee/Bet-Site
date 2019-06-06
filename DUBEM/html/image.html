@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+<title>image</title>
+<style>
+img{
+  max-width:180px;
+}
+input[type=file]{
+padding:10px;
+background:#2d2d2d;}
+</style>
+<script type="text/javascript">
+      function changeImage(){
+           document.getElementById('img').src = document.getElementById('thefile').value;
+      }
+  </script>
+</head>
+<body>
+ <div><input type='file' name='image' id="thefile" onchange="changeImage()" /></div>
+   <div><img src="" id="img" /></div>
+
+</body>
+</html>

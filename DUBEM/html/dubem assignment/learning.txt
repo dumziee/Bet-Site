@@ -1,0 +1,8 @@
+how to load external css files
+
+step 1. write the whole <!doctype html> 
+			<html>
+			<head>
+
+step 2. link your stylesheet using 
+	<link rel="stylesheet" href=="styles.css">

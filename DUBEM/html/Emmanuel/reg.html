@@ -1,0 +1,298 @@
+﻿<!Doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" href="Scripts/w3.css"/>
+<title>Registration Form</title>
+<meta charset="utf-8"/>
+<style>
+.thumb-image{
+ width:100px;
+ position:relative;
+ padding:5px;
+ border:solid 1px red;
+ float:right;
+ margin-left:250px
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+<header class="w3-gray" style="margin-top:0px">
+<div><h3 class="w3-padding ">APTECH REGISTRATION AND ENQUIRY FORMS</h3></div>
+<nav class="w3-black">
+<a href="app.html" class="w3-button">Application Form</a>
+<a href="reg.html" class="w3-button">Registration Form</a>
+<a href="inq.html" class="w3-button">Enquiry Form</a>
+</nav>
+</header>
+
+<div class="w3-container w3-center w3-padding-32" style="width:1200px; margin:45px; border:solid 10px red; border-radius:15px;">
+<span style="float:left"><img src="image\1.jpg" style="margin-top:-25px;"/></span>
+<span class="w3-black w3-wide w3-padding" style="margin-left:-200px; margin-top:120px;">REGISTRATION FORM</span>
+<div id="PreviewPicture"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<div id="wrapper" style="margin-top: -20px;"><input id="fileUpload" multiple="multiple" type="file" style="float:right;"/> <br/><br/>
+<div id="image-holder"><br/>
+</div>
+<script>
+
+	$(document).ready(function() {
+        $("#fileUpload").on('change', function() {
+          //Get count of selected files
+          var countFiles = $(this)[0].files.length;
+          var imgPath = $(this)[0].value;
+          var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+          var image_holder = $("#image-holder");
+          image_holder.empty();
+          if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+            if (typeof(FileReader) != "undefined") {
+              //loop for each file selected for uploaded.
+              for (var i = 0; i < countFiles; i++) 
+              {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                  $("<img />", {
+                    "src": e.target.result,
+                    "class": "thumb-image"
+                  }).appendTo(image_holder);
+                }
+                image_holder.show();
+                reader.readAsDataURL($(this)[0].files[i]);
+              }
+            } else {
+              alert("This browser does not support FileReader.");
+            }
+          } else {
+            alert("Pls select only images");
+          }
+        });
+      });
+
+</script>
+
+</div>
+
+
+<br />
+<div>
+<br/> <br/> <br/>
+<span style="float:left;">Sr. No: <input type="text" placeholder="01-1000" style="width:70px; height:auto;" /></span>
+<span>Course Registered for: <select> 
+<option value="select" selected="selected">Select</option>
+<option value="CPISM">Certificat of Proficiency in Information System Management</option>
+<option>ADSE</option>
+<option value="ACHS">Aptech Certified Network Administrator</option>
+<option value="ACNA">Aptech Certified Network Admnistrator</option>
+<option value="ACNM">Aptech Certified Network Manager</option>
+<option value="ACDM"> Aptech Certified Database Manager-SQL Server</option>
+</select></span>
+</div>
+<br/>
+
+<div style="text-align:left">
+<div><h5>PERSONAL DETAILS</h5></div>
+<span>Title <select><option>Select</option><option>Mr.</option><option>Mrs.</option><option>Miss</option></select></span>
+<br/><br/>
+<span> Surname: <input type="text" placeholder="surname" class="text" /></span>
+<span> Firstname: <input type="text" placeholder="firstname" class="text" /></span>
+<span> Lastname: <input type="text" placeholder="lastname" class="text" /></span><br/><br/>
+<span>Adress: <input type="text" style="width:700px"/></span><br/><br/>
+<span>Date of Birth:<input type="date"/></span>
+<span style="margin-left:30px">Gender: <input type="radio" name="Gender:" value="Male" /> Male <input type="radio" name="Gender:" value="Female"bhg /> Female
+<span style="margin-left:30px"> Contact No.: <input type="tel"/><br/><br/>
+<span>E-mail id1: <input type="email" style="width:700px" /></span><br/>
+</div>
+<br/>
+<div style="text-align:left">
+<div><h5>EDUCATION:</h5></div>
+<div>
+<table width="1010">
+<tr>
+<td>SSCE <input type="checkbox"/></td>
+<td>WAEC <input type="checkbox"/></td>
+<td>OND <input type="checkbox"/></td>
+<td>HND <input type="checkbox"/></td>
+<td>MSC. <input type="checkbox"/></td>
+<td>PHD <input type="checkbox"/></td>
+<td>NCE <input type="checkbox"/></td>
+<td>Others <input type="text"/></td>
+</tr>
+</table>
+</div
+
+
+
+</div>
+
+<div style="text-align:left">
+<div><h5>LANGUAGE:</h5></div>
+<div>
+<table width="965">
+<tr>
+<td>English <input type="checkbox"/></td>
+<td>Igbo <input type="checkbox"/></td>
+<td>Isoko <input type="checkbox"/></td>
+<td>Urhobo <input type="checkbox"/></td>
+<td>Hausa <input type="checkbox"/></td>
+<td>Yoruba <input type="checkbox"/></td>
+<td>Izon <input type="checkbox"/></td>
+<td>Others <input type="text"/></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div align="left">
+<div><h5>EXTRA CURRICULUM ACTIVITIES</h5></div>
+<div>
+<table width="500">
+<tr>
+<td>Game</td>
+<td><input type="text"/></td>
+</tr>
+<tr>
+<td>Hobbies</td>
+<td><input type="text"/></td>
+</tr>
+<tr>
+<td>Social Activities</td>
+<td><input type="text"/></td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
+<div align="left">
+<div><h5>SOCIAL NETWORK:</h5></div>
+<div>
+<table width="500">
+<tr>
+<td>Facebook</td>
+<td><input type="text"/></td>
+</tr>
+<tr>
+<td>Instagram</td>
+<td><input type="text"/></td>
+</tr>
+<tr>
+<td>Linked In</td>
+<td><input type="text"/></td>
+</tr>
+
+<tr>
+<td>Twitter</td>
+<td><input type="text"/></td>
+</tr>
+
+<tr>
+<td>Whatsapp No.</td>
+<td><input type="tel"/></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div>
+<div><h5>HOW DID YOU HEAR ABOUT US?</h5></div>
+<div>
+<table width="1000">
+<tr>
+<td><input type="checkbox"/> Seminar</td>
+<td><input type="checkbox"/> Workshop</td>
+<td><input type="checkbox"/> Friends/Relatives</td>
+<td><input type="checkbox"/> Internet</td>
+</tr>
+<tr>
+<td><input type="checkbox"/> Social Place <input type="text" placeholder="please specify"/></td>
+<td><input type="checkbox"/> Existing Student/Staff <input type="text" placeholder="Enter his/her name here"/></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div>
+<div><h5>FEEDBACK/SUGGESTIONS:</h5></div>
+<div><input type="text" placeholder="Feedback/Suggestions here!" style="width:800px; height:250px; text-align:up left;"/></div><br/>
+<div>
+<table>
+<tr>
+<td>Date: <input type="date"/></td>
+<td>Place: <input type="text"/></td>
+<td>Signature: <input type="file"/> </td>
+</tr>
+</table>
+</div>
+<br/>
+<hr/>
+<br/>
+
+<div>
+<div><h5>FOR OFFICIAL USE ONLY</h5></div>
+<div>
+<table width="800">
+<tr>
+<td>Requested by: </td>
+<td><input type="text"/></td>
+<td>Booking Reg. No.: </td>
+<td><input type="number"/></td>
+</tr>
+<tr>
+<td>Center: </td><td><input type="text"/></td>
+<td>Time: </td><td><input type="time"/></td>
+</tr>
+<tr>
+<td>Counsellor: </td><td><input type="text"/></td>
+<td>Date: </td><td><input type="date"/>
+</tr>
+<tr>
+<td>Signature: </td><td><input type="file"/></td>
+</tr>
+</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

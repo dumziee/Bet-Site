@@ -1,0 +1,42 @@
+
+html elements
+<br> is an empty element without a closing tag (the <br> tag defines a line break).
+Empty elements can be "closed" in the opening tag like this: <br />
+Attributes usually come in name/value pairs like: name="value"
+*The href Attribute <a href=""> and </a>
+*The src Attribute <img src=" .jpg"> 
+<img src="img_girl.jpg" width="500" height="600"> 
+*The style Attribute<p style="color:red">I am a paragraph</p> 
+*The title Attribute<p title="brief describtion">
+Bigger Headings
+<h1 style="font-size:60px;">Heading 1</h1>
+The HTML <pre> Element
+<pre></pre>it doesnt ignore space like paragrah
+backgroubd color
+<body style="background-color:powderblue;">
+HTML Text Color
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+HTML Text Size
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p> 
+HTML Formatting Elements
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Small text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+HOW TO COMMENT
+<!-- This is a comment -->
+HTML Styles - CSS
+css is used when u see style or any class called
+there are 3 types of css,
+Inline - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file
+

@@ -1,0 +1,130 @@
+<!doctype html> 
+<html>
+<head>
+<title>registration form
+</title>
+<meta charset="utf-8" />
+<style>
+
+</style>
+</head>
+<body>
+<div>
+<header align="center">
+<h3>REGISTRATION FORM</h3>
+
+<img src="1.jpg">
+
+</div>
+<div>
+<table style="width:100%">
+  <tr>
+<td>S.No..; <input type="text" name="firstname"></td>
+<td>course registered for  <input type="text" name="firstname"><td>
+   </tr>
+
+</div>
+</table>
+<H5>PERSONAL DETAILS</H5>
+<P> Title: Mr/Mrs/Miss</p>
+<P>Name:</p>
+<p>address:</p>
+<form>
+<table style="width:100%">
+<tr>
+<td>date of birth: <input type="date" date of birth:="date" min="1960-01-01">
+</td>
+<td><form>
+ Gender: <label>male</label>
+<input type ="radio"/>
+ <label>female</label>
+<input type ="radio"/>
+ 
+<td>Contact No.:</td>
+</tr>
+<tr>
+<td>Email Address:<input type="email"/>
+</td>
+</tr>
+</form>
+</table>
+<h4>EDUCATION</h4>
+SSCE
+<input type="checkbox">
+WAEC
+<input type="checkbox">
+OND
+<input type="checkbox">
+HND
+<input type="checkbox">
+BSC
+<input type="checkbox">
+MSC
+<input type="checkbox">
+PHD
+<input type="checkbox">
+NCE
+<input type="checkbox">
+OTHERS
+<h4>LANGUAGE</h4>
+ENGLISH
+<input type="checkbox">
+IGBO
+<input type="checkbox">
+ISOKO
+<input type="checkbox">
+URHOBO
+<input type="checkbox">
+HAUSA
+<input type="checkbox">
+YORUBA
+<input type="checkbox">
+
+OTHERS
+
+<h4>EXTRA CURRICULUM ACTIVITIES:</h4>
+<P>GAME:</p>
+<p>HOBBIES:</p>
+<P>SOCIAL ACTIVITIES:
+</p><h4>SOCIAL NETWORK:</h4>
+<P>FACEBOOK:</p>
+<p>INSTAGRAM:</p>
+<P>LINKED IN:</p>
+<p>TWITTER:</p>
+<P>WHATSAPP NO:</p>
+
+<h4>HOW DID YOU HEAR ABOUT US?:</h4>
+<P>Seminar, Workshop, Friends/relatives, Internet:</p>
+<p>social place:</p>
+<P>Existing student/Staff:</p>
+<h4>FEEDBACK/SUGGESTIONS:</h4>
+<table style="width:100%">
+<tr>
+<td>date: <input type="date" date of birth:="date" min="1960-01-01">
+</td>
+<td>place: </td>
+<td>signature: </td>
+</tr>
+</table>
+
+<P>FOR OFFICIAL USE ONLY</p>
+<table style="width:100%">
+<tr>
+<td>requested by:</td>
+<td>booking reg no:</td>
+<td>center:</>
+<tr>
+<td>time:</td>
+<td>counsellor:</td>
+<td>date: <input type="date" date of birth:="date" min="1960-01-01">
+</td>
+<tr>
+<td>signature: </td>
+
+</tr>
+</table>
+
+
+
+
+</body>

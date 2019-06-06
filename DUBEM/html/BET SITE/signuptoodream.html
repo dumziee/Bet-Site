@@ -1,0 +1,230 @@
+<!doctype html> 
+<html>
+<head>
+<style>
+p {
+    color:white;
+    font-family: courier;
+    font-size: 80%;
+  
+    padding: 5px;
+    margin: 5px;
+}
+a:link {
+    color:white; 
+    background-color: transparent; 
+    text-decoration: none;
+    margin-left:10px;
+}
+
+a:visited {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color:white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+body {background-image:url(7.jpg);}
+</style>
+<script type="text/javascript">
+function validation_for_signup()
+{
+
+     var check_email = /^[\w\.]+@[a-zA-Z_]+?\.[a-zA-Z\.]{2,6}$/;
+     var check_username = /^[a-zA-Z0-9_]{3,16}$/;
+     var check_name = /^[a-zA-Z]{3,16}$/;
+     var check_phone = /^[0-9]{3,16}$/;
+                      if(document.signup.username.value=="")
+                       {
+                           alert("please enter username");
+                           document.signup.username.focus();
+                           return false;
+                                }
+                       else if(check_username.test(document.signup.username.value) == false)
+                      {
+                                                alert('My guy na invalid  username you put');
+                                                document.signup.username.focus();
+                                                return false;
+                                }
+                                if(document.signup.email.value=="")
+                                {
+                                                alert("abeg enter email");
+                                                document.signup.email.focus();
+                                                return false;
+                                }
+                                else if(check_email.test(document.signup.email.value) == false)
+                                {
+                                                alert('My guy na invalid  email you put');
+                                                document.signup.email.focus();
+                                                return false;
+                                }
+                                if(document.signup.password.value=='')
+                                {
+                                                alert("Abeg enter Password.");
+                                                document.signup.password.focus();
+                                                return false;
+                                }
+                                else if(document.signup.password.value.length<6)
+                                {
+                                                alert("Password is too short.");
+                                                document.signup.password.focus();
+                                                return false;
+                                }
+                                if(document.signup.passconf.value=='')
+                                {
+                                                alert("Please confirm Password.");
+                                                document.signup.passconf.focus();
+                                                return false;
+                                }
+                                else if(document.signup.password.value!=document.signup.passconf.value)
+                                {
+                                                alert("Password does not match.");
+                                                document.signup.password.focus();
+                                                return false;
+                                }
+                                
+                                if(document.signup.firstname.value=="")
+                                {
+                                                alert("please enter firstname");
+                                                document.signup.firstname.focus();
+                                                return false;
+                                }
+                                else if(check_name.test(document.signup.firstname.value) == false)
+                                {
+                                                alert('Invalid  firstname');
+                                                document.signup.firstname.focus();
+                                                return false;
+                                }
+                                if(document.signup.lastname.value=="")
+                                {
+                                                alert("please enter lastname");
+                                                document.signup.lastname.focus();
+                                                return false;
+                                }
+                                else if(check_name.test(document.signup.lastname.value) == false)
+                                {
+                                                alert('Invalid  lastname');
+                                                document.signup.lastname.focus();
+                                                return false;
+                                }
+                                if(document.signup.phone.value=="")
+                                {
+                                                alert("please enter phone");
+                                                document.signup.phone.focus();
+                                                return false;
+                                }
+                                else if(check_phone.test(document.signup.phone.value) == false)
+                                {
+                                                alert('Invalid  phone');
+                                                document.signup.phone.focus();
+                                                return false;
+                                }
+}
+
+
+</script>
+</head>
+
+<body>
+<div style="background-color:tomato;">
+	<header >
+	<div><h1 align="center">ODDS EXPERT</h1></div>
+
+	<nav style= "background-color:black; height:30px;">
+	<a href="#" class="w3-button">Free tips</a>
+	<a href="#" class="w3-button">leagues</a>
+	<a href="#" class="w3-button">Buy sure odds</a>
+	<a href="#" class="w3-button">Jersey stores</a>
+	<a href="#" class="w3-button">Results</a>
+	<a href="#" class="w3-button">Contact Us</a>
+	
+
+<span style="float:right; margin-right:30px; ">
+
+	<a href="#" class="w3-button">Login</a>
+	<a href="#" class="w3-button">Register</a>
+	</nav>
+</span>
+</header>
+</div>
+<br/>
+
+<form name="signup" action="" onSubmit="return validation_for_signup()" method="post">
+
+<ul>
+  <p>&nbsp;</p>
+  </ul>
+  <div align="center" >
+    <table width="376" border="0">
+      <tr>
+        <td width="64"><p>First Name:</p></td>
+        <td width="296"><input type="text" name="firstname" placeholder="Enter Firstname" value="" size="50" /></td>
+      </tr>
+      <tr>
+        <td><p>Last Name:</p></td>
+        <td><input type="text" name="lastname" placeholder="Enter Lastname" value="" size="50" /></td>
+      </tr>
+      <tr>
+        <td><p>Username:</p></td>
+        <td><input type="text" name="username" placeholder="Enter Username" value="" size="50" /></td>
+      </tr>
+      <tr>
+        <td><p>Email:</p></td>
+        <td><input type="text" name="email" placeholder="Enter Email" value="" size="50" /></td>
+      </tr>
+      <tr>
+        <td><p>Password:</p></td>
+        <td><input type="password" name="password" placeholder="Enter Password" value="" size="50" /></td>
+
+      </tr>
+      <tr>
+        <td><p>Password Confirm:</p></td>
+        <td><input type="password" name="passconf" placeholder="Re-Enter Password"  value="" size="50" /></td>
+
+      </tr>
+      <tr>
+        <td><p>Phone:</p></td>
+        <td><input type="text" name="phone"  value="" size="50" /></td>
+      </tr>
+      <tr>
+        <td><p><input type="submit" value="Submit" /></p></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+  </li>
+<li>
+<p>&nbsp;</p></li>
+<li>
+<p>&nbsp;</p></li>
+
+<li>
+<p>&nbsp;</p></li>
+
+<li>
+  <p>&nbsp;</p></li>
+<li>
+<p>&nbsp;</p></li>
+<li>
+
+<li>
+<p>&nbsp;</p></li>
+<li>
+
+</div>
+</li></ul>
+</form>
+
+</body>
+</html>
